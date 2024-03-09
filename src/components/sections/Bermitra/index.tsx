@@ -5,7 +5,7 @@ interface BermitraProps {}
 
 const Bermitra: FC<BermitraProps> = ({}) => {
   return (
-    <section className="bg-blue-500 py-16">
+    <section className="bg-darkred py-16">
       <div className="container">
         <div className="flex flex-col gap-10 items-center">
           <div className="font-bold text-4xl text-white text-center">

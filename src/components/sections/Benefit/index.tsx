@@ -3,6 +3,25 @@ import React, { FC } from "react";
 
 interface BenefitProps {}
 
+const dataBenefit = [
+  [
+    "Brand Awarness Anda menjadi lebih tinggi!",
+    "di ngiklanmurah.com, iklan Anda akan secara bertahap dilihat orang dan akan menarik lebih banyak pembeli kepada Anda.",
+  ],
+  [
+    "Jangkauan Luas",
+    "Kami hadir dikota-kota besar se-Indonesia mulai dari Jabodetabek, Bandung,Jogjakarta, Surabaya, dan kota-kota besar lainnya",
+  ],
+  [
+    "Ragam pilihan iklan",
+    "Bersama kami iklan anda dapat kami pasangkan dimanapun yang dapat anda pikirkan, mulai dari Bilboard, TV, Radio, Digital Marketing, Influencer, semua tersedia di ngiklanmurah.com",
+  ],
+  [
+    "Harga yang sangat Terjangkau",
+    "Mulai dari 11.000an udah bisa mulai pasang iklan!",
+  ],
+];
+
 const Benefit: FC<BenefitProps> = ({}) => {
   return (
     <section className="bg-[#e7f0fd] py-16">
@@ -12,19 +31,14 @@ const Benefit: FC<BenefitProps> = ({}) => {
             Kenapa Beriklan Melalui Pasangiklan.com?
           </h3>
           <div className="grid grid-cols-2 gap-14">
-            {[1, 2, 3, 4].map((data, index) => (
+            {dataBenefit.map((data, index) => (
               <div className="flex flex-col gap-1 text-center" key={index}>
-                <h3 className="text-xl font-bold text-primary">
-                  Meningkatkan Brand Awareness Usaha Anda
-                </h3>
-                <p className="text-secondary text-base">
-                  Dengan Memasang iklan di Pasangiklan.com, usaha Anda secara
-                  bertahap akan dilihat dan mendatangkan pengunjung baru.
-                </p>
+                <h3 className="text-xl font-bold text-primary">{data[0]}</h3>
+                <p className="text-secondary text-base">{data[1]}</p>
               </div>
             ))}
           </div>
-          <Button className="bg-blue-500 p-7 rounded-full text-lg">
+          <Button className="bg-darkred p-7 rounded-full text-lg">
             Pasang Sekarang
           </Button>
         </div>

@@ -13,11 +13,27 @@ const autoPlayConfig = {
   disableOnInteraction: false,
 };
 
+const Header = [
+  [
+    "Dapatkan harga terbaik untuk eksposur terluas di kota-kota besar mulai dari Rp11.000an aja",
+    "1.OOH_.jpg",
+  ],
+  [
+    "Tingkatkan komunikasi bisnismu dengan layanan terpercaya kami",
+    "2.SMS.jpg",
+  ],
+  ["Gandeng influencer buat promosiin produkmu!", "3.DIGITAL MARKETING_.jpg"],
+  [
+    "Layanan digital marketing super affordable! Harga terjangkau",
+    "4.INFLUENCER.jpg",
+  ],
+];
+
 interface HeroCarouselProps {}
 
 const HeroCarousel: FC<HeroCarouselProps> = ({}) => {
   return (
-    <section className="bg-blue-500">
+    <section className="bg-darkred">
       <Swiper
         id="slider"
         autoplay={autoPlayConfig}
@@ -35,28 +51,26 @@ const HeroCarousel: FC<HeroCarouselProps> = ({}) => {
           prevEl: "#slider .swiper-button-prev",
         }}
         modules={[Pagination, Navigation, Autoplay]}>
-        <SwiperSlide>
-          <div className="grid grid-cols-2 items-center">
-            <div className="flex flex-col gap-8 px-4">
-              <h3 className="font-bold text-3xl text-white">
-                Anda Fokus Bisnis Aja, Kami Yang Buatin Iklannya
-              </h3>
-              <p className="text-lg text-white">
-                Gunakan kode kupon NEWADV. Periode promo 1-15 Februari 2024
-              </p>
-              <Button className=" bg-orange-300 w-40 rounded-xl">
-                Pasang Sekarang
-              </Button>
+        {Header.map((data, index) => (
+          <SwiperSlide key={index}>
+            <div className="grid grid-cols-2 items-center">
+              <div className="flex flex-col gap-8 px-4">
+                <h3 className="font-bold text-3xl text-white">{data[0]}</h3>
+                <p className="text-lg text-white hidden">{data[0]}</p>
+                <Button className=" bg-orange-300 w-40 rounded-xl">
+                  Pasang Sekarang
+                </Button>
+              </div>
+              <Image
+                src={`/Header/${data[1]}`}
+                width={820}
+                height={812}
+                className="w-full h-[32em]"
+                alt="banner1"
+              />
             </div>
-            <Image
-              src={"/banner1.png"}
-              width={820}
-              height={812}
-              className="w-full h-[32em]"
-              alt="banner1"
-            />
-          </div>
-        </SwiperSlide>
+          </SwiperSlide>
+        ))}
       </Swiper>
     </section>
   );
