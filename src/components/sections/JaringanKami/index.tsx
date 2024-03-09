@@ -46,10 +46,7 @@ const JaringanKami: FC<JaringanKamiProps> = ({}) => {
             modules={[Pagination, Navigation, Autoplay]}>
             {[1, 2, 3, 4, 5].map((data, index) => (
               <SwiperSlide className="!w-1/4 " key={index}>
-                <img
-                  className="px-4"
-                  src="https://static.pasangiklan.com/pi_c/images/partner/kontan.png"
-                />
+                <img className="px-4" src="/logoo.png" />
               </SwiperSlide>
             ))}
           </Swiper>
