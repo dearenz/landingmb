@@ -5,10 +5,10 @@ interface HeaderProps {}
 
 const Header: FC<HeaderProps> = ({}) => {
   return (
-    <header className="bg-darkred sticky top-0 z-10">
+    <header className="bg-white sticky top-0 z-10 shadow-sm">
       <div className="container mx-auto">
         <nav className="flex flex-wrap justify-between items-center py-[1.5rem]">
-          <Image src={"/logo.png"} width={200} height={40} alt="logo" />
+          <Image src={"/logoo.png"} width={200} height={40} alt="logo" />
         </nav>
       </div>
     </header>

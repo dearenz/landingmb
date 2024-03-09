@@ -28,7 +28,7 @@ const Benefit: FC<BenefitProps> = ({}) => {
       <div className="container mx-auto">
         <div className="flex flex-col gap-10 items-center">
           <h3 className="text-3xl font-bold text-center text-primary">
-            Kenapa Beriklan Melalui Pasangiklan.com?
+            Kenapa Beriklan Dengan Ngiklanmurah.com
           </h3>
           <div className="grid grid-cols-2 gap-14">
             {dataBenefit.map((data, index) => (
