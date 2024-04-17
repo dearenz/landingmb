@@ -29,7 +29,7 @@ const dataIklan = [
 
 const Services: FC<ServicesProps> = ({}) => {
   return (
-    <section className="py-16">
+    <section className="bg-[#e7f0fd] py-16">
       <div className="container mx-auto flex flex-col gap-10 items-center">
         <div className="flex flex-col gap-4 text-center">
           <h3 className="font-bold text-primary text-2xl">Pilihan Iklan</h3>

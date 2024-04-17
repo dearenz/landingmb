@@ -5,6 +5,7 @@ import HeroCarousel from "@/components/sections/HeroCarousel";
 import HowToUse from "@/components/sections/HowToUse";
 import JaringanKami from "@/components/sections/JaringanKami";
 import Services from "@/components/sections/Services";
+import Counter from "@/components/sections/Counter";
 
 export default function Home() {
   return (
@@ -20,10 +21,8 @@ export default function Home() {
         <Services />
         {/* how to ads */}
         <HowToUse />
-        {/* partnership */}
-        <Bermitra />
-        {/* Client */}
-        <JaringanKami />
+        {/* Counter */}
+        <Counter />
         {/* Footer */}
       </main>
       {/* footer */}

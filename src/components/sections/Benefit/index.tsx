@@ -24,7 +24,7 @@ const dataBenefit = [
 
 const Benefit: FC<BenefitProps> = ({}) => {
   return (
-    <section className="bg-[#e7f0fd] py-16">
+    <section className=" py-16">
       <div className="container mx-auto">
         <div className="flex flex-col gap-10 items-center">
           <h3 className="text-3xl font-bold text-center text-primary">
